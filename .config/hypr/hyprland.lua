@@ -1,0 +1,17 @@
+require("hyprland-monitors")
+require("hyprland-programs")
+require("hyprland-autostart")
+require("hyprland-envvars")
+require("hyprland-permissions")
+require("hyprland-lookandfeel")
+require("hyprland-misc")
+require("hyprland-input")
+require("hyprland-keybindings")
+
+hl.on("hyprland.start", function()
+	hl.exec_cmd("systemctl --user start hyprland-session.target")
+end)
+
+hl.on("hyprland.shutdown", function()
+	os.execute("systemctl --user stop hyprland-session.target && sleep 0.1")
+end)
