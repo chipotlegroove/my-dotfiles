@@ -3,6 +3,7 @@
 ---------------------
 local programs = require("hyprland-programs")
 local mainMod = "SUPER"
+local ipc = "noctalia msg "
 
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd(programs.terminal))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
@@ -11,13 +12,15 @@ hl.bind(
 	hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'")
 )
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("~/.config/hypr/launch_yazi.sh"))
-hl.bind(mainMod .. " + F", hl.dsp.window.float({ action = "toggle" }))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(programs.menu))
-hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
+hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd(ipc .. "panel-toggle launcher"))
+hl.bind(mainMod .. " + P", hl.dsp.exec_cmd(ipc .. "panel-toggle session"))
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("hyprlock"))
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(ipc .. "session lock"))
+hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(ipc .. "panel-toggle control-center"))
 hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("flatpak run app.zen_browser.zen"))
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("~/.config/waybar/launch.sh"))
+hl.bind(mainMod .. " +comma", hl.dsp.exec_cmd(ipc .. "settings-toggle"))
 hl.bind(
 	mainMod .. " + F11",
 	hl.dsp.exec_cmd(

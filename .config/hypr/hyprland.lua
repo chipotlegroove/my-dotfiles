@@ -7,6 +7,7 @@ require("hyprland-lookandfeel")
 require("hyprland-misc")
 require("hyprland-input")
 require("hyprland-keybindings")
+require("hyprland-windowsandworkspaces")
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("systemctl --user start hyprland-session.target")
