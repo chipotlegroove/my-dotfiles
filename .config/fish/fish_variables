@@ -6,7 +6,7 @@ SETUVAR __fish_initialized:4300
 SETUVAR _fisher_jorgebucaran_2F_nvm_2E_fish_files:\x7e/\x2econfig/fish/functions/_nvm_index_update\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_list\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_activate\x2efish\x1e\x7e/\x2econfig/fish/functions/_nvm_version_deactivate\x2efish\x1e\x7e/\x2econfig/fish/functions/nvm\x2efish\x1e\x7e/\x2econfig/fish/conf\x2ed/nvm\x2efish\x1e\x7e/\x2econfig/fish/completions/nvm\x2efish
 SETUVAR _fisher_plugins:jorgebucaran/nvm\x2efish
 SETUVAR _fisher_upgraded_to_4_4:\x1d
-SETUVAR fish_user_paths:/home/chipotle/\x2elocal/bin\x1e/home/chipotle/\x2ecargo/bin\x1e/home/chipotle/\x2eopencode/bin\x1e/home/chipotle/morespace/llama\x2ecpp/build/bin\x1e/opt/cuda/bin\x1e/home/chipotle/\x2eusagi/bin\x1e/home/chipotle/go/bin\x1e/home/chipotle/develop/flutter/bin\x1e/home/chipotle/\x2econfig/composer/vendor/bin
+SETUVAR fish_user_paths:/nix/store/vvf2kqdiq734frlwd9yik07zh647jz1z\x2ddevenv\x2d2\x2e2\x2e2/bin\x1e/nix/store/jxxp01dayz0pv6vp7n39r9042ycsiicx\x2dhello\x2d2\x2e12\x2e3/bin\x1e/home/chipotle/\x2elocal/bin\x1e/home/chipotle/\x2ecargo/bin\x1e/home/chipotle/\x2eopencode/bin\x1e/home/chipotle/morespace/llama\x2ecpp/build/bin\x1e/opt/cuda/bin\x1e/home/chipotle/\x2eusagi/bin\x1e/home/chipotle/go/bin\x1e/home/chipotle/develop/flutter/bin\x1e/home/chipotle/\x2econfig/composer/vendor/bin
 SETUVAR pure_begin_prompt_with_current_directory:true
 SETUVAR pure_check_for_new_release:false
 SETUVAR pure_color_at_sign:pure_color_mute
@@ -32,6 +32,7 @@ SETUVAR pure_color_mute:brblack
 SETUVAR pure_color_nixdevshell_prefix:pure_color_info
 SETUVAR pure_color_nixdevshell_symbol:pure_color_mute
 SETUVAR pure_color_normal:normal
+SETUVAR pure_color_prefix_private_prompt:pure_color_danger
 SETUVAR pure_color_prefix_root_prompt:pure_color_danger
 SETUVAR pure_color_primary:blue
 SETUVAR pure_color_prompt_on_error:pure_color_danger
@@ -57,6 +58,7 @@ SETUVAR pure_shorten_window_title_current_directory_length:0
 SETUVAR pure_show_exit_status:false
 SETUVAR pure_show_jobs:false
 SETUVAR pure_show_numbered_git_indicator:false
+SETUVAR pure_show_prefix_private_prompt:false
 SETUVAR pure_show_prefix_root_prompt:false
 SETUVAR pure_show_subsecond_command_duration:false
 SETUVAR pure_show_system_time:false
@@ -70,6 +72,7 @@ SETUVAR pure_symbol_git_unpulled_commits:\u21e3
 SETUVAR pure_symbol_git_unpushed_commits:\u21e1
 SETUVAR pure_symbol_k8s_prefix:\u2638
 SETUVAR pure_symbol_nixdevshell_prefix:\u2744\ufe0f
+SETUVAR pure_symbol_prefix_private_prompt:\x21
 SETUVAR pure_symbol_prefix_root_prompt:\x23
 SETUVAR pure_symbol_prompt:\u276f
 SETUVAR pure_symbol_reverse_prompt:\u276e
